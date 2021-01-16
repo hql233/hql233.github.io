@@ -26,11 +26,11 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 HQL"
+            content: "这里是 Mashiro"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "一个蓝孩子~"
+                content: "一个可爱的蓝孩子~"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
@@ -65,32 +65,32 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于中国政法大学。高中是新昌中学，初中是建功中学，小学是鲁迅小学"
+                content: "目前就读于上海财经大学"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "目前专业是思想政治教育，不过未来可能会走汉语言的路……"
+                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "如果成为一个科幻作家之类的听上去也不错"
+                        content: "因为数据分析也需要Coder嘛"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主要研究C/C++语言，学过三年多的Visual Basic，未来可能会学习Java，Python和HTML之类的！"
+                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "学过一点点绘画，包括小学六年素描，四年简笔画，一年国画，六年书法和以及自学成菜的漫画（日漫风格）"
+                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "希望成为一个优秀的画师。喜欢的画师主要有村田雄介，土笔章人，藤原之类的……画家的话就达芬奇和莫奈"
+                                    content: "喜欢画画，希望有一天能够被称为画师"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "高中为什么有人你叫黄大师呢？ 🤔",
+                                            text: "为什么叫Mashiro呢？ 🤔",
                                             value: "why-mashiro"
                                         }]
                                     }).then(function (a) {
@@ -106,12 +106,12 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为我有研究过神秘学之类的东西，经常和他们聊一些东方道术和西方魔法学原理，好似神棍~~"
+                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "喜欢的虚拟人物？ 🤔",
+                        text: "为什么是白猫呢？ 🤔",
                         value: "why-cat"
                     }]
                 }).then(function (a) {
@@ -122,16 +122,16 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "女性的话，就是椎名真白、忍野忍；男性的话，欣赏大老师风范和《三体2》里的罗辑"
+                content: "因为对GitHub有种执念… "
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "当然，毛茸茸的娜娜奇必不可少！"
+                    content: "而且我真的是猫控！"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
                         action: [{
-                            text: "有什么喜欢的作品吗？",
+                            text: "域名有什么含意吗？(ง •_•)ง",
                             value: "why-domain"
                         }]
                     }).then(function (a) {
@@ -143,11 +143,11 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "最爱的科幻小说《三体》；吹爆漫画《来自深渊》，当然《炎拳》《一击男》也很棒，番的话好多，代表性的《物语》系列、《来自新世界》《魔法少女小圆》《少末》；"
+                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,
-                    content: "那么，欢迎参观本蒟蒻的博客！ ^_^"
+                    content: "那么，仔细看看我的博客吧？ ^_^"
                 })
             })
         } 
