@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-16T15:34:17.235Z</updated>
+  <updated>2021-01-18T12:40:14.348Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用计算机的正确姿势——网络篇</title>
+    <link href="http://example.com/2021/01/17/%E9%A3%9F%E7%94%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://example.com/2021/01/17/%E9%A3%9F%E7%94%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</id>
+    <published>2021-01-17T12:38:01.000Z</published>
+    <updated>2021-01-18T12:40:14.348Z</updated>
+    
+    
+    <summary type="html">科学上网，为计算机小白导航！</summary>
+    
+    
+    
+    <category term="资源" scheme="http://example.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="归档" scheme="http://example.com/tags/%E5%BD%92%E6%A1%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>个人大事记</title>
@@ -40,10 +59,10 @@
     <link href="http://example.com/2021/01/16/%E5%90%84%E7%A5%9E%E7%A7%98%E7%BD%91%E7%AB%99%E4%BC%A0%E9%80%81%E9%97%A8/"/>
     <id>http://example.com/2021/01/16/%E5%90%84%E7%A5%9E%E7%A7%98%E7%BD%91%E7%AB%99%E4%BC%A0%E9%80%81%E9%97%A8/</id>
     <published>2021-01-16T14:16:01.000Z</published>
-    <updated>2021-01-17T11:49:54.924Z</updated>
+    <updated>2021-01-18T03:51:07.623Z</updated>
     
     
-    <summary type="html">magic</summary>
+    <summary type="html">收藏的一些有趣的网站……</summary>
     
     
     
