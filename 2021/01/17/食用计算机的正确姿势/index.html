@@ -418,8 +418,8 @@
 <hr>
 <h1 id="网络篇"><a href="#网络篇" class="headerlink" title="网络篇"></a>网络篇</h1><hr>
 <h6 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h6><ul>
-<li>url：资源地址，就是大家看到的<a target="_blank" rel="noopener" href="http://www.baidu.com之类的网址啦/">www.baidu.com之类的网址啦</a></li>
-<li>http/https：一种协议，冠在<a target="_blank" rel="noopener" href="http://www.xxx之前/">www.xxx之前</a></li>
+<li>url：资源地址，就是大家看到的<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 之类的网址啦</li>
+<li>http/https：一种协议，冠在<a target="_blank" rel="noopener" href="http://www.xxx/">www.xxx</a> 之前</li>
 <li>js: 插件</li>
 <li>git：响应式分部系统的一种</li>
 <li>ios/mac：苹果移动端/电脑端 系统</li>
@@ -477,11 +477,11 @@
 <p>  &ensp; &ensp;  购买了套餐以后可以在手机端或者电脑端使用ssr进行翻墙操作，操作简单。&ensp; 详细教程订阅节点后看这里<a target="_blank" rel="noopener" href="https://docs.lengjiao.me/wiki/win">windows教程</a> | <a target="_blank" rel="noopener" href="https://docs.lengjiao.me/wiki/android">安卓手机教程</a> | <a target="_blank" rel="noopener" href="https://docs.lengjiao.me/wiki/ios">IOS苹果教程</a> | <a target="_blank" rel="noopener" href="https://docs.lengjiao.me/wiki/mac">MAC苹果电脑教程</a> 这里不再赘述。<br><em>（如果有意向共同租赁VPN的小伙伴可以私聊我O(∩_∩)O~~）</em> </p>
 <p>  其他VPN：<br>  · V2rayNG <a target="_blank" rel="noopener" href="http://www.wangchao.info/1795.html">下载这里</a> | <a target="_blank" rel="noopener" href="https://tlanyan.me/v2ray-clients-download/">详细的V2RayN戳这里</a><br>  · superfast <a target="_blank" rel="noopener" href="http://www.super-fastapps.com/zh/">官网有点慢</a></p>
 <hr>
-<h4 id="2-Nginx绕过本地SNI审查（以pixiv为例）"><a href="#2-Nginx绕过本地SNI审查（以pixiv为例）" class="headerlink" title="2.Nginx绕过本地SNI审查（以pixiv为例）"></a>2.Nginx绕过本地SNI审查（以pixiv为例）</h4><h6 id="·-假代反（本地代反）-RUNOOB1"><a href="#·-假代反（本地代反）-RUNOOB1" class="headerlink" title="· 假代反（本地代反）^RUNOOB1"></a>· 假代反（本地代反）<a href="%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%9A%E7%99%BD%E7%8C%ABMashiro%E3%80%8Apixiv%E5%8F%8A%E5%85%B6%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AE%E6%81%A2%E5%A4%8D%E6%8C%87%E5%8D%97%E3%80%8B">^RUNOOB1</a></h6><p>   &ensp; 针对一些国外网站，直接访问会404，但是其IP是活的，换句话其IP没有被封禁，那么可以利用反代服务器Nginx绕过SNI审查（注意是本地审查，不是真代反）。&ensp;  <em>【注意：个人使用不违法，但私自发布到第三方平台可能违法】</em>  </p>
+<h4 id="2-Nginx绕过本地SNI审查（以pixiv为例）"><a href="#2-Nginx绕过本地SNI审查（以pixiv为例）" class="headerlink" title="2.Nginx绕过本地SNI审查（以pixiv为例）"></a>2.Nginx绕过本地SNI审查（以pixiv为例）</h4><h6 id="·-假反代（本地反代）"><a href="#·-假反代（本地反代）" class="headerlink" title="· 假反代（本地反代）"></a>· 假反代（本地反代）</h6><p>   · 参考资料：白猫Mashiro《pixiv及其客户端访问恢复指南》<br>   &ensp; 针对一些国外网站，直接访问会404，但是其IP是活的，换句话其IP没有被封禁，那么可以利用反代服务器Nginx绕过SNI审查（注意是本地审查，不是真代反）。&ensp;  <em>【注意：个人使用不违法，但私自发布到第三方平台可能违法】</em>  </p>
 <p>   这里主要介绍<strong>Windows</strong>的操作过程，如果是<strong>Mac</strong>用户<a target="_blank" rel="noopener" href="http://idayer.com/nginx-reverse-proxy-for-pixiv/">戳这里</a>  </p>
 <p>   <strong>环境</strong>：请确保你的电脑网络环境属于纯净环境，如果你已经开了VPN等各类其他代理或浏览器代理类插件，请先关闭所有代理。<br>   <strong>下载源文件</strong>： <a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx">此处下载 download</a> （<a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx/blob/master/README.md">下载注意事项</a>  ）&ensp; 解压到电脑任意路径位置中（注意最好是纯英文路径下，例如D:\fandai\类似，随意）<br>   <strong>安装</strong>： 安装下载的文件中的<strong>ca.cer</strong>根证书，然后参考下方「hosts 修改方法」部分修改 hosts（请使用压缩包里的hosts）<br>   ① <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/c843ea0bc4142a77921e4a79.html">Google Chorme安装证书教程</a> ②<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/4e5b3e191205d291911e2463.html">FireFox安装证书方法</a> ③其他山寨浏览器自己找路径或百度。&ensp;&ensp;&ensp;&ensp;将Mashiro……开头的证书添加至<strong>受信任机构列表</strong>中（如下图）<br>   <img src="https://view.moezx.cc/images/2019/01/27/Mashiro-Internet-Fake-Authority-CA.png" alt="如图"><br>   <strong>启动</strong>： 通过可视化工具或者调试工具启动 Nginx 。</p>
 <p>Linux系统使用方法：<br> &ensp; &ensp; Nginx 配置文件目录为 /etc/nginx/，使用和 MAC 完全一致的配置文件和证书并替换配置文件即可，最后参考下方「hosts 修改方法」部分的方法修改 hosts（请使用压缩包里的hosts，因为每次更新都可能变的）。</p>
-<h6 id="·-真代反（以pixiv-net为例）"><a href="#·-真代反（以pixiv-net为例）" class="headerlink" title="· 真代反（以pixiv.net为例）"></a>· 真代反（以pixiv.net为例）</h6><p>  &ensp;&ensp;&ensp; 原理和操作比较复杂，请参考这篇文章：<a target="_blank" rel="noopener" href="https://moe.best/technology/pixiv-proxy.html">真 · 代反P站</a> &ensp; <em>（作者：神代綺凜）</em></p>
+<h6 id="·-真反代（以pixiv-net为例）"><a href="#·-真反代（以pixiv-net为例）" class="headerlink" title="· 真反代（以pixiv.net为例）"></a>· 真反代（以pixiv.net为例）</h6><p>  &ensp;&ensp;&ensp; 原理和操作比较复杂，请参考这篇文章：<a target="_blank" rel="noopener" href="https://moe.best/technology/pixiv-proxy.html">真 · 反代P站</a> &ensp; <em>（作者：神代綺凜）</em></p>
 <hr>
 <h2 id="◆启用浏览器拓展-插件"><a href="#◆启用浏览器拓展-插件" class="headerlink" title="◆启用浏览器拓展/插件"></a>◆启用浏览器拓展/插件</h2><h4 id="浏览器插件是什么"><a href="#浏览器插件是什么" class="headerlink" title="浏览器插件是什么"></a>浏览器插件是什么</h4><p>  &ensp;&ensp; &ensp;浏览器插件是对浏览器自带功能的一种拓展性应用，用来为用户提供更多更快捷的服务，我们可以通过安装自己想要的插件来获得相应的上网体验的提升。比如：</p>
 <ul>
@@ -534,14 +534,13 @@ npm -v</code></pre>
 <p>  · <strong>配置npm的淘宝源</strong>,安装完成后可通过npm info hexo查看是否配置淘宝源成功。输入：</p>
 <pre><code class="yml">npm config set registry https://registry.npm.taobao.org</code></pre>
 <p>  然后输入：</p>
-<pre><code class="yml">npm hexo hexo</code></pre>
+<pre><code class="yml">npm info hexo</code></pre>
 <p>  检查是否配置成功。</p>
 <p>  <strong>· 安装Hexo</strong> 输入：</p>
 <pre><code class="yml">npm install -g hexo</code></pre>
 <p>   · 在本地磁盘任意一个位置右键新建一个文件夹，命名为<strong>blog</strong>（也可以命名为其他但强烈不建议），点击进入blog文件夹中。 <em>例如我在D:/位置建立了一个blog文件夹，然后进入D:/blog/</em></p>
 <p>  这时，我们称你所在的位置为博客的“<strong>根目录</strong>” 示例中根目录为D:/blog/<br>  在博客根目录下右键<strong>Git Bash Here</strong><br>  分别输入：</p>
-<pre><code class="yml">hexo init  
-cd test      
+<pre><code class="yml">hexo init        
 npm install</code></pre>
 <p>  找一下有没有出现“Start blogging with hexo”之类的<br>  <img src="https://i.loli.net/2021/01/18/3DfeItzaujXFE4P.png" alt="5-3"><br>  <img src="https://i.loli.net/2021/01/18/x24MiQf8sXJaVqo.png" alt="5-4"></p>
 <p>  这样基本配置就完成了，让我们来看一下<strong>本地网页预览</strong>。三连输入（记住这几个指令）：</p>
@@ -549,18 +548,15 @@ npm install</code></pre>
 hexo g
 hexo s</code></pre>
 <p>  （可能需要等待较长时间）</p>
-<p>在浏览器中输入访问 <a href="http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：">http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：</a><br><img src="https://i.loli.net/2021/01/18/jtg3PnblAdR4aCc.png" alt="5-5"></p>
+<p>在浏览器中输入访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> ，体验Hexo。不出意外的话，你会看到这样的：<br><img src="https://i.loli.net/2021/01/18/jtg3PnblAdR4aCc.png" alt="5-5"></p>
 <p><strong>部署到gitee page</strong></p>
 <p>这只是本地，<strong>最后要将网页部署到gitee page上</strong>，这样别人才能看到你的博客！而这个环节往往出错最多，要多查资料查错。实在不行从头来。</p>
 <p>· 复制你的gitee仓库到hexo配置文件,根目录的<strong>_config.yml</strong>中。这个文件应该用之前下载好的notepad++或者vscode来打开、修改。请找到对应部分并修改:</p>
 <pre><code class="yml"> deploy:
     type: git
-    repo: https://gitee.com/****/****   #修改这里这里填你的仓库URL
-    branch: master                      #把分支修改成master</code></pre>
-<pre><code class="yml"># Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: Sakura    #找到这段，把主题（theme）修改为Sakura</code></pre>
+      repo: https://gitee.com/****/****   #修改这里这里填你的仓库URL   
+    branch: master                        #把分支修改成master</code></pre>
+<pre><code class="yml">theme: Sakura    #找到这段，把主题（theme）修改为Sakura</code></pre>
 <p>然后请在博客根目录下修改依次输入以下指令(*号处用你的邮箱和用户名代替):</p>
 <pre><code class="yml">npm install hexo-deployer-git --save # 安装git插件
 git config --global user.email *********@qq.com # 设置gitee邮箱（gitee的注册邮箱）
