@@ -413,7 +413,7 @@
         
         <div class="entry-content">
           <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&ensp; &ensp; 本篇文章是针对计算机小白的<strong>入门指南</strong>（大佬自便），解决一些大家较为关注的，诸如“怎么翻墙看外网？”  &ensp; “我想学编程怎么入门？” “我要用什么软件来XXX？” &ensp; “电脑开机黑屏咋办？”&ensp; “什么浏览器没广告？” 之类的问题（包括Andoriod手机部分问题），<strong>请自助选择你要查询的问题或者困惑</strong>  </p>
-<p>★如果你是$\color{red}{“电脑端”}$用户，那么可以在该页面右侧的菜单中快速索引查找你感兴趣的问题。<br>☆如果你是$\color{red}{“手机端”}$或$\color{red}{客户端}$用户，那么可以移步电脑端或者直接往下翻浏览你感兴趣的问题。  </p>
+<p>★如果你是“电脑端”，那么可以在该页面右侧的菜单中快速索引查找你感兴趣的问题。<br>☆如果你是“手机端”或客户端用户，那么可以移步电脑端或者直接往下翻浏览你感兴趣的问题。  </p>
 <p>&ensp;  &ensp; <em>希望本文对你有所帮助，如果本文所述不够详细或未找到你想解决的问题，可以考虑向百度或者博主本人求助~~ 本文会不定期持续更新</em><br><em>(作者：HQL 2021.1)</em></p>
 <hr>
 <h1 id="网络篇"><a href="#网络篇" class="headerlink" title="网络篇"></a>网络篇</h1><hr>
@@ -479,7 +479,7 @@
 <hr>
 <h4 id="2-Nginx绕过本地SNI审查（以pixiv为例）"><a href="#2-Nginx绕过本地SNI审查（以pixiv为例）" class="headerlink" title="2.Nginx绕过本地SNI审查（以pixiv为例）"></a>2.Nginx绕过本地SNI审查（以pixiv为例）</h4><h6 id="·-假代反（本地代反）-RUNOOB1"><a href="#·-假代反（本地代反）-RUNOOB1" class="headerlink" title="· 假代反（本地代反）^RUNOOB1"></a>· 假代反（本地代反）<a href="%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%9A%E7%99%BD%E7%8C%ABMashiro%E3%80%8Apixiv%E5%8F%8A%E5%85%B6%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AE%E6%81%A2%E5%A4%8D%E6%8C%87%E5%8D%97%E3%80%8B">^RUNOOB1</a></h6><p>   &ensp; 针对一些国外网站，直接访问会404，但是其IP是活的，换句话其IP没有被封禁，那么可以利用反代服务器Nginx绕过SNI审查（注意是本地审查，不是真代反）。&ensp;  <em>【注意：个人使用不违法，但私自发布到第三方平台可能违法】</em>  </p>
 <p>   这里主要介绍<strong>Windows</strong>的操作过程，如果是<strong>Mac</strong>用户<a target="_blank" rel="noopener" href="http://idayer.com/nginx-reverse-proxy-for-pixiv/">戳这里</a>  </p>
-<p>   <strong>环境</strong>：请确保你的电脑网络环境属于纯净环境，如果你已经开了VPN等各类其他代理或浏览器代理类插件，请先关闭所有代理。<br>   <strong>下载源文件</strong>： <a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx">此处下载 download</a> （<a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx/blob/master/README.md">下载注意事项</a>  ）&ensp; 解压到电脑任意路径位置中（注意最好是纯英文路径下，例如D:\fandai\类似，随意）<br>   <strong>安装</strong>： 安装下载的文件中的 $\color{Blue}\colorbox{Yellow}{ca.cer}$ 根证书，然后参考下方「hosts 修改方法」部分修改 hosts（请使用压缩包里的hosts）<br>   ① <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/c843ea0bc4142a77921e4a79.html">Google Chorme安装证书教程</a> ②<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/4e5b3e191205d291911e2463.html">FireFox安装证书方法</a> ③其他山寨浏览器自己找路径或百度。&ensp;&ensp;&ensp;&ensp;将Mashiro……开头的证书添加至<strong>受信任机构列表</strong>中（如下图）<br>   <img src="https://view.moezx.cc/images/2019/01/27/Mashiro-Internet-Fake-Authority-CA.png" alt="如图"><br>   <strong>启动</strong>： 通过可视化工具或者调试工具启动 Nginx 。</p>
+<p>   <strong>环境</strong>：请确保你的电脑网络环境属于纯净环境，如果你已经开了VPN等各类其他代理或浏览器代理类插件，请先关闭所有代理。<br>   <strong>下载源文件</strong>： <a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx">此处下载 download</a> （<a target="_blank" rel="noopener" href="https://github.com/mashirozx/Pixiv-Nginx/blob/master/README.md">下载注意事项</a>  ）&ensp; 解压到电脑任意路径位置中（注意最好是纯英文路径下，例如D:\fandai\类似，随意）<br>   <strong>安装</strong>： 安装下载的文件中的<strong>ca.cer</strong>根证书，然后参考下方「hosts 修改方法」部分修改 hosts（请使用压缩包里的hosts）<br>   ① <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/c843ea0bc4142a77921e4a79.html">Google Chorme安装证书教程</a> ②<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/4e5b3e191205d291911e2463.html">FireFox安装证书方法</a> ③其他山寨浏览器自己找路径或百度。&ensp;&ensp;&ensp;&ensp;将Mashiro……开头的证书添加至<strong>受信任机构列表</strong>中（如下图）<br>   <img src="https://view.moezx.cc/images/2019/01/27/Mashiro-Internet-Fake-Authority-CA.png" alt="如图"><br>   <strong>启动</strong>： 通过可视化工具或者调试工具启动 Nginx 。</p>
 <p>Linux系统使用方法：<br> &ensp; &ensp; Nginx 配置文件目录为 /etc/nginx/，使用和 MAC 完全一致的配置文件和证书并替换配置文件即可，最后参考下方「hosts 修改方法」部分的方法修改 hosts（请使用压缩包里的hosts，因为每次更新都可能变的）。</p>
 <h6 id="·-真代反（以pixiv-net为例）"><a href="#·-真代反（以pixiv-net为例）" class="headerlink" title="· 真代反（以pixiv.net为例）"></a>· 真代反（以pixiv.net为例）</h6><p>  &ensp;&ensp;&ensp; 原理和操作比较复杂，请参考这篇文章：<a target="_blank" rel="noopener" href="https://moe.best/technology/pixiv-proxy.html">真 · 代反P站</a> &ensp; <em>（作者：神代綺凜）</em></p>
 <hr>
@@ -521,13 +521,13 @@
 </ul>
 <hr>
 <h4 id="hexo-github-gitee-搭建个人博客"><a href="#hexo-github-gitee-搭建个人博客" class="headerlink" title="hexo+github/gitee 搭建个人博客"></a>hexo+github/gitee 搭建个人博客</h4><p>   如果你是新手，请<strong>严格按照步骤</strong>执行！此处演示的是gitee+hexo搭建网站的教程。</p>
-<h6 id="0-1-建立自己的GitHub库"><a href="#0-1-建立自己的GitHub库" class="headerlink" title="0-1. 建立自己的GitHub库"></a>0-1. 建立自己的GitHub库</h6><p>   注册完github账号后，登录——创建新仓库<br>   <img src="https://upload-images.jianshu.io/upload_images/18327817-692c463a2ca61fec.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-1">  </p>
-<h6 id="0-2-填写的仓库名为“你的用户名-github-io”，用户名一定要和左边用户名一样（切记），否则后面会出错"><a href="#0-2-填写的仓库名为“你的用户名-github-io”，用户名一定要和左边用户名一样（切记），否则后面会出错" class="headerlink" title="0-2. 填写的仓库名为“你的用户名.github.io”，用户名一定要和左边用户名一样（切记），否则后面会出错"></a>0-2. 填写的仓库名为“你的用户名.github.io”，用户名一定要和左边用户名一样（切记），否则后面会出错</h6><p>   <img src="https://upload-images.jianshu.io/upload_images/18327817-79a68ae93e05a7e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-2"></p>
+<h6 id="0-1-建立自己的GitHub库"><a href="#0-1-建立自己的GitHub库" class="headerlink" title="0-1. 建立自己的GitHub库"></a>0-1. 建立自己的GitHub库</h6><p>   注册完github账号后，登录——创建新仓库<br>   <img src="https://i.loli.net/2021/01/18/5GWjdupL7VzETro.png" alt="5-1">  </p>
+<h6 id="0-2-填写的仓库名为“你的用户名-github-io”，用户名一定要和左边用户名一样（切记），否则后面会出错"><a href="#0-2-填写的仓库名为“你的用户名-github-io”，用户名一定要和左边用户名一样（切记），否则后面会出错" class="headerlink" title="0-2. 填写的仓库名为“你的用户名.github.io”，用户名一定要和左边用户名一样（切记），否则后面会出错"></a>0-2. 填写的仓库名为“你的用户名.github.io”，用户名一定要和左边用户名一样（切记），否则后面会出错</h6><p>   <img src="https://i.loli.net/2021/01/18/dijFHCxZqOM4AR9.png" alt="5-2"></p>
 <p>   这里虽然我们用gitee搭建网站，但是后来的jsDiliever+CDN还是要用到GitHub，所以还是要注册Github。</p>
 <h6 id="1-建立自己的gitee库"><a href="#1-建立自己的gitee库" class="headerlink" title="1.建立自己的gitee库"></a>1.建立自己的gitee库</h6><p>   注册gitee（码云）并登录。<br>   和上面Github的操作大同小异，也是要创建一个<strong>和我们用户名一样</strong>的仓库。注意：和我们用户名一样的仓库只能创建一个。而且无论是gitee还是github上面的文件都无法单独删除，只能删除整个库。 如下图：</p>
-<p>   <img src="https://upload-images.jianshu.io/upload_images/23601649-86071af46552ad4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp"></p>
+<p>   <img src="https://i.loli.net/2021/01/18/ktR28Ses35yTrAo.png" alt="5-01"></p>
 <p>   注意一定要选择公开类型（public）否则会出问题。</p>
-<h6 id="2-Hexo配置"><a href="#2-Hexo配置" class="headerlink" title="2. Hexo配置"></a>2. Hexo配置</h6><p>   · 下载好Git后，桌面<strong>右键</strong>看看是否有“<strong>Git Bash Here</strong>” 选项，若有，则成功。<br>   <img src="https://upload-images.jianshu.io/upload_images/18327817-c0fd8749dd671aa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-2"><br>   · 下载好node.js后, 打开电脑自带的<strong>cmd</strong>窗口，分别输入下列两个指令：</p>
+<h6 id="2-Hexo配置"><a href="#2-Hexo配置" class="headerlink" title="2. Hexo配置"></a>2. Hexo配置</h6><p>   · 下载好Git后，桌面<strong>右键</strong>看看是否有“<strong>Git Bash Here</strong>” 选项，若有，则成功。<br>   <img src="https://i.loli.net/2021/01/18/CDHOotpibzaxrEL.png" alt="5-02"><br>   · 下载好node.js后, 打开电脑自带的<strong>cmd</strong>窗口，分别输入下列两个指令：</p>
 <pre><code class="yml">node -v
 npm -v</code></pre>
 <p>   如果显示出版本号，则成功。一般都会成功。</p>
@@ -543,14 +543,14 @@ npm -v</code></pre>
 <pre><code class="yml">hexo init  
 cd test      
 npm install</code></pre>
-<p>  找一下有没有出现“Start blogging with hexo”之类的<br>  <img src="https://upload-images.jianshu.io/upload_images/18327817-25acf0afd4a41322.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-3"><br>  <img src="https://upload-images.jianshu.io/upload_images/18327817-f5050b65118b4306.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-4"></p>
+<p>  找一下有没有出现“Start blogging with hexo”之类的<br>  <img src="https://i.loli.net/2021/01/18/3DfeItzaujXFE4P.png" alt="5-3"><br>  <img src="https://i.loli.net/2021/01/18/x24MiQf8sXJaVqo.png" alt="5-4"></p>
 <p>  这样基本配置就完成了，让我们来看一下<strong>本地网页预览</strong>。三连输入（记住这几个指令）：</p>
 <pre><code class="yml">hexo clean
 hexo g
 hexo s</code></pre>
 <p>  （可能需要等待较长时间）</p>
-<p>在浏览器中输入访问 <a href="http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：">http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：</a><br><img src="https://upload-images.jianshu.io/upload_images/18327817-67002143244c345f.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="5-5"></p>
-<p>部署到gitee page请</p>
+<p>在浏览器中输入访问 <a href="http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：">http://localhost:4000，体验Hexo。不出意外的话，你会看到这样的：</a><br><img src="https://i.loli.net/2021/01/18/jtg3PnblAdR4aCc.png" alt="5-5"></p>
+<p><strong>部署到gitee page</strong></p>
 <p>这只是本地，<strong>最后要将网页部署到gitee page上</strong>，这样别人才能看到你的博客！而这个环节往往出错最多，要多查资料查错。实在不行从头来。</p>
 <p>· 复制你的gitee仓库到hexo配置文件,根目录的<strong>_config.yml</strong>中。这个文件应该用之前下载好的notepad++或者vscode来打开、修改。请找到对应部分并修改:</p>
 <pre><code class="yml"> deploy:
